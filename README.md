@@ -15,7 +15,7 @@ xcodebuild -exportArchive -archivePath build/YourProjectName.xcarchive -exportPa
 ```
 
 ## 其他注意事项<br>
-第三步打包需要有个export.plist文件
+* 第三步打包需要有个export.plist文件才能打包成功<br>
 export.plist文件代码如下：<br>
 
 ```
