@@ -2,11 +2,17 @@
 #命令行打包主要步骤<br>
 ====
 1. 清理<br>
+```
 xcodebuild clean -workspace YourProjectName.xcworkspace -scheme YourProjectName -configuration Release
+```
 2. 编译<br>
+```
 xcodebuild -workspace YourProjectName.xcworkspace -scheme YourProjectName -archivePath build/YourProjectName.xcarchive archive
+```
 3. 打包<br>
+```
 xcodebuild -exportArchive -archivePath build/YourProjectName.xcarchive -exportPath build -exportOptionsPlist export.plist
+```
 
 #其他注意事项<br>
 ====
@@ -42,8 +48,8 @@ export.plist文件代码如下：<br>
 
 #需要你自己结合项目信息配置进去：<br>
 -------
-method:打的包的类型（app-store, ad-hoc, package, enterprise, development, and developer-id）<br>
-provisionProfiles:项目的包名和对应ProvisionProfiles文件名<br>
-signingCertificate:是否是开发环境还是生产环境<br>
-teamID:TeamID（通过AppleDeveloper查看）<br>
+method: 打的包的类型（app-store, ad-hoc, package, enterprise, development, and developer-id）<br>
+provisionProfiles: 项目的包名和对应ProvisionProfiles文件名<br>
+signingCertificate: 是否是开发环境还是生产环境<br>
+teamID: TeamID（通过AppleDeveloper查看）<br>
 
