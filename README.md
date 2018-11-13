@@ -1,6 +1,7 @@
 # CommandLineArchive
 命令行打包
 #主要步骤
+
 1. 清理
 xcodebuild clean -workspace YourProjectName.xcworkspace -scheme YourProjectName -configuration Release
 2. 编译
@@ -8,6 +9,7 @@ xcodebuild -workspace YourProjectName.xcworkspace -scheme YourProjectName -archi
 3. 打包
 xcodebuild -exportArchive -archivePath build/YourProjectName.xcarchive -exportPath build -exportOptionsPlist export.plist
 #其他注意事项
+
 export.plist文件代码如下：
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -37,6 +39,7 @@ export.plist文件代码如下：
 </plist>
 
 #需要你自己结合项目信息配置进去：
+
 method:打的包的类型（app-store, ad-hoc, package, enterprise, development, and developer-id）
 provisionProfiles:项目的包名和对应ProvisionProfiles文件名
 signingCertificate:是否是开发环境还是生产环境
