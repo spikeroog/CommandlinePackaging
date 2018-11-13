@@ -1,5 +1,6 @@
 # CommandLineArchive<br>
-# 命令行打包主要步骤<br>
+通过终端命令行进行编译打包
+## 命令行打包主要步骤<br>
 1. 清理<br>
 ```
 xcodebuild clean -workspace YourProjectName.xcworkspace -scheme YourProjectName -configuration Release
@@ -13,7 +14,7 @@ xcodebuild -workspace YourProjectName.xcworkspace -scheme YourProjectName -archi
 xcodebuild -exportArchive -archivePath build/YourProjectName.xcarchive -exportPath build -exportOptionsPlist export.plist
 ```
 
-# 其他注意事项<br>
+## 其他注意事项<br>
 第三步打包需要有个export.plist文件
 export.plist文件代码如下：<br>
 
@@ -46,8 +47,8 @@ export.plist文件代码如下：<br>
 ```
 
 ## export.plist需要你自己配置的信息：<br>
-*method: 打的包的类型（app-store, ad-hoc, package, enterprise, development, and developer-id）<br>
-*provisionProfiles: 项目的包名和对应ProvisionProfiles文件名<br>
-*signingCertificate: 是否是开发环境还是生产环境<br>
-*teamID: TeamID（通过AppleDeveloper查看）<br>
+* method: 打的包的类型（app-store, ad-hoc, package, enterprise, development, and developer-id）<br>
+* provisionProfiles: 项目的包名和对应ProvisionProfiles文件名<br>
+* signingCertificate: 是否是开发环境还是生产环境<br>
+* teamID: TeamID（通过AppleDeveloper查看）<br>
 
