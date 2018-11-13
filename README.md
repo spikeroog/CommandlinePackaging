@@ -45,8 +45,8 @@ export.plist文件代码如下：<br>
 </dict>
 </plist>
 ```
-
 ## export.plist需要你自己配置的信息：<br>
+![](http://www.baidu.com/img/bdlogo.gif)
 *  method: 打的包的类型（app-store, ad-hoc, package, enterprise, development, and developer-id）<br>
 *  provisionProfiles: 项目的包名和对应ProvisionProfiles文件名<br>
 *  signingCertificate: 是否是开发环境还是生产环境<br>
