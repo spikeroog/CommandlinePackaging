@@ -1,16 +1,16 @@
-# CommandLineArchive
-命令行打包
-#主要步骤
+# CommandLineArchive<br>
+命令行打包<br>
+#主要步骤<br>
 
-1. 清理
+1. 清理<br>
 xcodebuild clean -workspace YourProjectName.xcworkspace -scheme YourProjectName -configuration Release
-2. 编译
+2. 编译<br>
 xcodebuild -workspace YourProjectName.xcworkspace -scheme YourProjectName -archivePath build/YourProjectName.xcarchive archive
-3. 打包
+3. 打包<br>
 xcodebuild -exportArchive -archivePath build/YourProjectName.xcarchive -exportPath build -exportOptionsPlist export.plist
-#其他注意事项
+#其他注意事项<br>
 
-export.plist文件代码如下：
+export.plist文件代码如下：<br>
 
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -38,10 +38,10 @@ export.plist文件代码如下：
 </dict>
 </plist>
 
-#需要你自己结合项目信息配置进去：
+#需要你自己结合项目信息配置进去：<br>
 
-method:打的包的类型（app-store, ad-hoc, package, enterprise, development, and developer-id）
-provisionProfiles:项目的包名和对应ProvisionProfiles文件名
-signingCertificate:是否是开发环境还是生产环境
-teamID:TeamID（通过AppleDeveloper查看）
+method:打的包的类型（app-store, ad-hoc, package, enterprise, development, and developer-id）<br>
+provisionProfiles:项目的包名和对应ProvisionProfiles文件名<br>
+signingCertificate:是否是开发环境还是生产环境<br>
+teamID:TeamID（通过AppleDeveloper查看）<br>
 
