@@ -18,7 +18,7 @@ xcodebuild -exportArchive -archivePath build/YourProjectName.xcarchive -exportPa
 #### 第三步打包需要有个export.plist文件才能打包成功<br>
 export.plist文件代码如下：<br>
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -46,9 +46,9 @@ export.plist文件代码如下：<br>
 </plist>
 ```
 ## export.plist需要你自己配置的信息：<br>
-![](http://www.baidu.com/img/bdlogo.gif)
-*  method: 打的包的类型（app-store, ad-hoc, package, enterprise, development, and developer-id）<br>
-*  provisionProfiles: 项目的包名和对应ProvisionProfiles文件名<br>
-*  signingCertificate: 是否是开发环境还是生产环境<br>
-*  teamID: TeamID（通过AppleDeveloper查看）<br>
+![](https://github.com/spikeroog/CommandLineArchive/blob/master/屏幕快照%202018-11-13%20下午1.56.41.png)
+*  `method`: 打的包的类型（`app-store`, `ad-hoc`, `package`, `enterprise`, `development`, and `developer-id`）<br>
+*  `provisionProfiles`: 项目的包名和对应ProvisionProfiles文件名<br>
+*  `signingCertificate`: 是否是开发环境还是生产环境<br>
+*  `teamID`: TeamID（通过AppleDeveloper查看）<br>
 
