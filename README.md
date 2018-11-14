@@ -18,7 +18,7 @@ xcodebuild -exportArchive -archivePath build/YourProjectName.xcarchive -exportPa
 #### 第三步打包需要有个export.plist文件才能打包成功<br>
 export.plist文件代码如下：<br>
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
