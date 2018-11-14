@@ -1,6 +1,5 @@
-# 命令行打包
-通过终端命令行进行编译打包
-## 命令行打包主要步骤<br>
+# 命令行编译打包
+## 主要步骤
 1. 清理<br>
 ```
 xcodebuild clean -workspace YourProjectName.xcworkspace -scheme YourProjectName -configuration Release
