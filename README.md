@@ -46,7 +46,7 @@ export.plist文件代码如下：<br>
 ```
 ## export.plist需要你自己配置的信息：<br>
 ![](https://github.com/spikeroog/CommandLineArchive/blob/master/屏幕快照%202018-11-14%20下午3.11.31.png)
-*  `method`: 打的包的类型（`app-store`, `ad-hoc`, `package`, `enterprise`, `development`, and `developer-id`）<br>
+*  `method`: 打的包的类型（`development`, `ad-hoc`, `app-store`, `enterprise`）<br>
 *  `provisionProfiles`: 项目的包名和对应ProvisionProfiles文件名<br>
 *  `signingCertificate`: 是否是开发环境还是生产环境<br>
 *  `teamID`: TeamID（通过AppleDeveloper查看）<br>
